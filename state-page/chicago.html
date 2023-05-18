@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--contains css link, and page title-->
+        <meta charset="utf-8">
+        <title>Chicago, Illinois</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <!-- contains website title along with page navigation elements -->
+                <h1 class="title">Welcome to Chicago!</h1>
+            </div>
+            <!--nav menu-->
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#">CITIES</a>
+                        <ul class="dropdown-content">
+                            <li><a href="springfield.html">Springfield</a></li>
+                            <li><a href="chicago.html">Chicago</a></li>
+                            <li><a href="belleville.html">Belleville</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="state-logo">
+                <img src="illinois-state-outline.png" alt="Small picture of illinois" width="30px" height="auto">
+            </div>
+        </header>
+
+        <main>
+            <!--main page contents-->
+            <div class="image-container">
+                <img src="illinois.png" alt="picture of state">
+                <img src="chicago-emblem.png" alt="emblem of chicago">
+                <script defer src="script.js"></script>
+            </div>
+            <section class="content main-para">
+                <!--Brief history of the state-->
+                <h2>History</h2>
+                <p> The area was first inhabited by the Potawatomi Native American tribe. It was first organized as a town of about 200 people, and grew quickly enough to be the fastest growing city for several decades. In 1871 a fire destroyed an area of the city about 4 miles long and 1 mile wide, it was later know as the Great Chicago Fire. The subsequent rebuilding of the city resulted in the worlds first skyscraper. Chicago became the nations hub for railroads, and developed the standardized system of North American time zones that are now used throughout the continent.</p>
+                <!--About section for the state-->
+                <h2>About</h2>
+                <p>Chicago is the most populous city in Illinois, and third in the United States. It is bordered by one of the Great Lakes, Michigan. It is also the home to the first ever steel skyscraper. It is cnosidered an international hub for finance,commerce, education, and technology. It is also considered the railroad hub of the USA.</p>
+                <!--Brief paragraph about the states general weather-->
+                <h2>Climate</h2>
+                <p>Chicago is considered to have a humid continental climate, and experiences all 4 seasons. Summers are hot and humid with frequent heat waves. Winters are cold and snowy, with blizzards. Spring and Autumn are mild and short with low humidity. </p>
+                <!--Top things to do-->
+                <h2>Top 3 things to do in Chicago</h2>
+                <ol>
+                    <li>Visit Art Institute of Chicago</li>
+                    <li>Visit Museum of Science and Industry</li>
+                    <li>Visit 360 Chicago Observation Deck</li>
+                </ol>
+
+                <h2>Sources:</h2>
+                <p>
+                    Wikipedia contributors. (2023, April 15). Chicago. In Wikipedia. Retrieved April 19, 2023, from https://en.wikipedia.org/wiki/Chicago
+                </p>
+            </section>
+
+            <!--Sidebar-->
+            <aside>
+                <div class="aside-container">
+                    <!--Facts and figures about the state-->
+                    <!--State symbols (flag, bird, flower, etc.)-->
+                    <h2>Facts about the City:</h2>
+                    <ul>
+                        <li>Population: 2,746,388</li>
+                        <li>Founded: circa 1780</li>
+                        <li>Incorporated: August 12, 1833</li>
+                        <li>Region: North</li>
+                        <li>County: Cook, DuPage</li>
+                        <li>Classification: Urban</li>
+                        <li>Average Income Level: $65,781</li>
+                    </ul>
+                    <!--Form for asking questions-->
+                    <div class="city-form">
+                        <h3>Submit Questions</h3>
+                        <div id="error"></div>
+                        <form name="form" action="/" method="POST">
+                            <label for="email1">Email:</label>
+                            <input type="email" id="email1" name="email1" placeholder="email@site.com">
+                            <label for="email2">Confirm Email:</label>
+                            <input type="email" id="email2" name="email2" placeholder="email@site.com" required>
+                            <label for="first">First:</label>
+                            <input type="text" id="first" name="first" placeholder="First Name">
+                            <label for="last">Last:</label>
+                            <input type="text" id="last" name="last" placeholder="Last Name">
+                            <label for="question">Question:</label>
+                            <textarea id="question" name="question" placeholder="Type your question here." style="height: 100px;"></textarea>
+                            <button onclick="validateForm()" type="button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </body>
+</html>
