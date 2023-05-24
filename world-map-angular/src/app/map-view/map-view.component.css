@@ -1,0 +1,26 @@
+#tt-info {
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(233, 233, 233);
+    border: 2px solid black;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+#tt-info ul li {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+#tt-info h1 {
+    text-align: center;
+}
+
+path:hover, circle:hover {
+  cursor: pointer;
+}
+
+#tt-info a {
+    float: right;
+    padding-right: 10px;
+}

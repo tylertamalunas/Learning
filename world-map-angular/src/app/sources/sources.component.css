@@ -1,0 +1,18 @@
+.mySources {
+    padding: 20px;
+    border: 2px solid #000;
+    width: 50%;
+    font-size: 20px;
+    background: #0e2352;
+    border-radius: 25px;
+    color: white;
+
+}
+
+.sourcesTitle {
+    text-align:center;
+}
+
+.mySources a {
+    color: red;
+}
